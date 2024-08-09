@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@700&display=swap'); /* Importing fonts */
+
+.buttonMainWrap{
+    width: 133px;
+    height: 47px;
+    border-radius: 20px;
+    background-color: #052732;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-align: center;
+    line-height: 47px;
+}
+
