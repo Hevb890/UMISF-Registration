@@ -1,0 +1,10 @@
+.imageShuttle{
+    background-color: #052732;
+    max-width: fit-content;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.imageShuttle img{
+    height: 40px;
+}

@@ -2,6 +2,8 @@ import './App.css'
 import Button from './Components/Button'
 import InputSection from './Components/InputSection'
 import MainBox from './Components/MainBox'
+import ImageShuttle from './Components/ImageShuttle'
+import OptionName from './Components/OptionName'
 
 function App() {
 
@@ -9,6 +11,8 @@ function App() {
     <>
       <Button />
       <InputSection />
+      <ImageShuttle />
+      <OptionName />
     </>
   )
 }
