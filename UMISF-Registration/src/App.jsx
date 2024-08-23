@@ -6,6 +6,7 @@ import ImageShuttle from './Components/ImageShuttle'
 import OptionName from './Components/OptionName'
 import Event from './Components/Event'
 import Gender from './Components/Gender'
+import PastPerformance from './Components/PastPerformance'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <OptionName />
       <Gender />
       <Event/>
+      <PastPerformance />
     </>
   )
 }
