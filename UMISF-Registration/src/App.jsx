@@ -4,6 +4,7 @@ import InputSection from './Components/InputSection'
 import MainBox from './Components/MainBox'
 import ImageShuttle from './Components/ImageShuttle'
 import OptionName from './Components/OptionName'
+import Event from './Components/Event'
 import Gender from './Components/Gender'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <ImageShuttle />
       <OptionName />
       <Gender />
+      <Event/>
     </>
   )
 }
