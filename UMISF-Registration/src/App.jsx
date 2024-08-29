@@ -1,26 +1,21 @@
-import './App.css'
-import Button from './Components/Button'
-import InputSection from './Components/InputSection'
-import MainBox from './Components/MainBox'
-import ImageShuttle from './Components/ImageShuttle'
-import OptionName from './Components/OptionName'
-import Event from './Components/Event'
-import Gender from './Components/Gender'
-import PastPerformance from './Components/PastPerformance'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./Components/Layout";
+import Home from "./Pages/Home";
+import Selection from "./Pages/Selection";
+import AgeRegister from "./Pages/AgeRegister";
 
 function App() {
-
   return (
-    <>
-      <Button />
-      <InputSection />
-      <ImageShuttle />
-      <OptionName />
-      <Gender />
-      <Event/>
-      <PastPerformance />
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/selection" element={<Selection />} />
+          <Route path="/ageregister" element={<AgeRegister />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
