@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@700&display=swap'); /* Importing fonts */
+
+.optionName{
+    margin-left: 5px; /*Only for development */
+    background-color: #052732;
+    color: #fff;
+    max-width: fit-content;
+    padding: 15px;
+    font-family: 'Inter','Sans-Serif';
+    font-weight: bolder;
+    font-size: 14px;
+}

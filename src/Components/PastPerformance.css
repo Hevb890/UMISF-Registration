@@ -1,0 +1,19 @@
+.pastPerformanceContainer{
+    border: 1px solid #000;
+    max-width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.pastPerformanceSubContainer{
+    display: flex;
+}
+
+.ageGroup,.achievement,.tournamentName{
+    padding: 5px;
+}
+
+.tournamentName input{
+    width: 287px;
+} 
+
