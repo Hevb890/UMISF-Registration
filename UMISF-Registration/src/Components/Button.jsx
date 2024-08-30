@@ -1,10 +1,10 @@
 import React from 'react'
-import './Button.css'
 
-export default function Button() {
+export default function Button({buttonName}) {
   return (
-    <div className='buttonMainWrap'>
-      <p>NEXT</p>
-    </div>
+    <button class="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-2 mr-2">
+      {buttonName}
+    </button>
+
   )
 }

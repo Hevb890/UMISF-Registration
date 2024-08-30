@@ -3,6 +3,7 @@ import Layout from "./Components/Layout";
 import Home from "./Pages/Home";
 import Selection from "./Pages/Selection";
 import AgeRegister from "./Pages/AgeRegister";
+import RulesandRegulations from "./Pages/RulesandRegulations"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/selection" element={<Selection />} />
           <Route path="/ageregister" element={<AgeRegister />} />
+          <Route path="/rules" element={<RulesandRegulations />} />
         </Route>
       </Routes>
     </Router>

@@ -11,8 +11,10 @@
     "start": "react-scripts start"
   },
   "dependencies": {
+    "pdf-viewer-reactjs": "^2.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-pdf": "^9.1.0",
     "react-router-dom": "^6.26.1",
     "umisf-registration": "file:"
   },
