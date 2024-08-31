@@ -4,6 +4,7 @@ import Home from "./Pages/Home";
 import Selection from "./Pages/Selection";
 import AgeRegister from "./Pages/AgeRegister";
 import RulesandRegulations from "./Pages/RulesandRegulations"
+import PastPerformances from "./Pages/PastPerformances";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/selection" element={<Selection />} />
           <Route path="/ageregister" element={<AgeRegister />} />
           <Route path="/rules" element={<RulesandRegulations />} />
+          <Route path="/pastperformance" element={<PastPerformances/>} />
         </Route>
       </Routes>
     </Router>
