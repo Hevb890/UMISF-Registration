@@ -5,6 +5,7 @@ import Selection from "./Pages/Selection";
 import AgeRegister from "./Pages/AgeRegister";
 import RulesandRegulations from "./Pages/RulesandRegulations"
 import PastPerformances from "./Pages/PastPerformances";
+import Payment from "./Pages/Payment";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/ageregister" element={<AgeRegister />} />
           <Route path="/rules" element={<RulesandRegulations />} />
           <Route path="/pastperformance" element={<PastPerformances/>} />
+          <Route path="/payment" element={<Payment />} />
         </Route>
       </Routes>
     </Router>
