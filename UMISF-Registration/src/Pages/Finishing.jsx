@@ -1,8 +1,18 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import CheckImg from '../assets/checked.png'
 import Button from '../Components/Button'
 
 export default function Finishing() {
+    const navigate = useNavigate() //Navigate Hook
+
+    const handleNextClcik = () => {
+      navigate('/');
+    }
+  
+    const handleBackClick = () => {
+      navigate('/')
+    }
   return (
     <div className="flex flex-col justify-center items-center w-full h-full ">
         <div className=" w-[800px] mt-4 h-[410px]  flex flex-row  rounded-[44px] shadow-2xl ">
@@ -18,8 +28,8 @@ export default function Finishing() {
                     <img src={CheckImg} className="h-[180px] m-3"/>
                 </div>
                 <div className='flex flex-col'>
-                    <Button buttonName="ENTER A ANOTHER ENTRY" />
-                    <Button buttonName="FINISH" />
+                    <Button buttonName="ENTER A ANOTHER ENTRY" onClick={handleBackClick}/>
+                    <Button buttonName="FINISH" onClick={handleNextClcik}/>
                 </div>
             </div>
         </div>

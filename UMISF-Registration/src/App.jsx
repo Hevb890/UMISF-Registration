@@ -17,8 +17,8 @@ function App() {
           <Route path="/selection" element={<Selection />} />
           <Route path="/ageregister" element={<AgeRegister />} />
           <Route path="/rules" element={<RulesandRegulations />} />
-          <Route path="/pastperformance" element={<PastPerformances/>} />
-          <Route path="/payment" element={<Payment />} />
+          <Route exact path="/pastperformance" element={<PastPerformances/>} />
+          <Route exact path="/payment" element={<Payment />} />
           <Route path="/finish" element={<Finishing />} />
         </Route>
       </Routes>

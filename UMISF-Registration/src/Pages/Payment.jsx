@@ -1,8 +1,18 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Button from '../Components/Button'
 import Payable from '../Components/Payable'
 
 export default function Payment() {
+    const navigate = useNavigate() //Navigate Hook
+
+    const handleNextClcik = () => {
+      navigate('/finish');
+    }
+  
+    const handleBackClick = () => {
+      navigate('/pastperformance')
+    }
   return (
     <div className="flex flex-col justify-center items-center w-full h-full ">
         <div className=" w-[800px] mt-4 h-[410px]  flex flex-row  rounded-[44px] shadow-2xl ">
@@ -24,8 +34,8 @@ export default function Payment() {
                     </div>
                 </div>
                 <div>
-                    <Button buttonName="BACK" />
-                    <Button buttonName="NEXT" />
+                    <Button buttonName="BACK" onClick={handleBackClick}/>
+                    <Button buttonName="NEXT" onClick={handleNextClcik}/>
                 </div>
             </div>
         </div>
