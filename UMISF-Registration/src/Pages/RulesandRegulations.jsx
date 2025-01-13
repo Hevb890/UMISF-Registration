@@ -1,8 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Button from '../Components/Button'
-import Checkbox from '../Components/Checkbox'
 
 export default function RulesandRegulations() {
+  const [consent, setConsent] = useState(false);
+  const navigate = useNavigate();
+
+  const handleChange = () => {
+    console.log('Current consent value:', consent); // Debugging
+    setConsent(!consent);
+    console.log('Updated consent value:', !consent);
+  }
+
+  const handleNextClcik = () => {
+    if(consent){
+      navigate('/ageregister');
+    }else{
+      alert("Please Accept Rules and Regulations")
+    }
+  }
+
+  const handleBackClick = () => {
+    navigate('/selection');
+  }
   return (
     <div className="flex flex-col justify-center items-center w-full h-full ">
       <div className=" w-[800px] mt-4 h-[410px]  flex flex-row  rounded-[44px] shadow-2xl ">
@@ -17,11 +37,12 @@ export default function RulesandRegulations() {
                
             </div>
             <div>
-                <Checkbox checkBoxName="I accept rules and regulations"/>
+                <input type="checkbox" id="check_box" value={consent} onChange={handleChange}/>
+                <label className='ml-2 text-xs' for="check_box">I accept rules and regulations</label>
             </div>
             <div className='flex flex-row'>
-                <Button buttonName="Back" />
-                <Button buttonName="Next" />
+                <Button buttonName="Back" onClick={handleBackClick}/>
+                <Button buttonName="Next" onClick={handleNextClcik}/>
             </div>
         </div>
       </div>

@@ -1,7 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import homepic from "../assets/homepic.png";
 
 const Home = () => {
+  const navigate = useNavigate()
+
+  const handleNextClcik = () => {
+    navigate('/selection')
+  }
   return (
     <div className="flex flex-col justify-center items-center w-full h-full ">
       <div className=" w-[800px] mt-4 h-[410px]  flex flex-row  rounded-[44px] shadow-2xl ">
@@ -15,9 +21,10 @@ const Home = () => {
           <p className="text-[15px] font-medium tracking-[2px] mt-[-8px] mb-[30px]">
             BADMINTON CHAMPIONSHIP
           </p>
-          <form className="flex-col flex items-center justify-center mt-4">
+          <form className="flex-col flex items-center justify-center mt-4" onSubmit={handleNextClcik}>
             <input
               id="Email"
+              type="email"
               placeholder="Enter your Email"
               required
               className="text-center w-[300px] rounded-full h-[40px] drop-shadow-lg"

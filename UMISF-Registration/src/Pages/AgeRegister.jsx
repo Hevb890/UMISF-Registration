@@ -1,6 +1,5 @@
 import React from "react";
 import ageRegister from "../assets/AgeRegister.png";
-import Calender from "../Components/Calender";
 
 const AgeRegister = () => {
   return (
@@ -30,58 +29,54 @@ const AgeRegister = () => {
               className="text-center w-[300px] rounded-full h-[40px] drop-shadow-lg mt-2"
             />
             <div className="flex-row flex gap-4 mt-4">
-              <div className="drop-shadow-lg bg-white p-2">
-                <p className="font-medium">Gender</p>
+              <div className="drop-shadow-lg bg-white p-2 rounded-lg">
+                <p className="font-bold">Gender</p>
                 <div className="flex flex-row gap-2 ">
-                  <label>
                     <input
+                      id = "male_radio"
                       type="radio"
                       placeholder="Male"
                       name="gender"
                       value="Male"
                     />
-                    Male
-                  </label>
-                  <label>
+                    <label for="male_radio" className="text-md"> Male </label>
                     <input
+                      id="female_radio"
                       type="radio"
                       placeholder="Female"
                       name="gender"
                       value="Female"
                     />
-                    Female
-                  </label>
+                    <label for="female_radio" className="text-md">Female</label>
                 </div>
               </div>
-              <div className="drop-shadow-lg bg-white p-2">
-                <p className="font-medium">Event</p>
+              <div className="drop-shadow-lg bg-white p-2 rounded-lg">
+                <p className="font-bold">Event</p>
                 <div className="flex flex-row gap-2">
-                  <label>
                     <input
+                      id="single_checkbox"
                       type="checkbox"
                       placeholder="Singles"
                       name="Event"
                       value="Singles"
-                      className="w-4 h-4 border-black"
                     />
-                    Singles
-                  </label>
-                  <label>
+                    <label for="single_checkbox">Singles</label>
+                  
                     <input
+                    id="double_checkbox"
                       type="checkbox"
                       placeholder="Doubles"
                       name="Event"
                       value="Doubles"
-                      className="w-4 h-4"
                     />
-                    Doubles
-                  </label>
+                    <label for="double_checkbox">Doubles</label>
+                    
                 </div>
               </div>
             </div>
-            <div className="drop-shadow-lg bg-white p-2 mt-2">
-              <p className="font-medium">Date of Birth</p>
-              <Calender />
+            <div className="drop-shadow-lg bg-white p-2 mt-2 rounded-lg">
+              <p className="font-bold">Date of Birth</p>
+              <input type="date" name="" id="" />
             </div>
           </form>
         </div>
